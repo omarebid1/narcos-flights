@@ -1,9 +1,6 @@
 package com.narcos.airlines.entity;
 
-import jakarta.persistence.Column;
-import jakarta.persistence.Entity;
-import jakarta.persistence.Id;
-import jakarta.persistence.Table;
+import jakarta.persistence.*;
 import lombok.*;
 
 import java.time.LocalDate;
@@ -18,6 +15,7 @@ import java.util.Date;
 @NoArgsConstructor
 public class FlightEntity {
         @Id
+        @GeneratedValue(strategy = GenerationType.IDENTITY)
         @Column(name = "flight_id")
         int id;
 
@@ -39,10 +37,10 @@ public class FlightEntity {
         @Column(name = "pilot_id")
         int pilotId;
 
-        @Column(name = "co_piolt_id")
+        @Column(name = "co_pilot_id")
         int coPilotId;
 
         @Column(name="status")
-        FlightStatusEnum flightStatus;
+        String flightStatus;
 
 }
