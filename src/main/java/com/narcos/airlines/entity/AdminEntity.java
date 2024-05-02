@@ -30,6 +30,7 @@ public class AdminEntity {
     @Column(name = "email")
     private String adminEmail;
     private String adminPhone;
+    //maher
 
 
 }
