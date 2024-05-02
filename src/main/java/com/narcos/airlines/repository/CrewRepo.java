@@ -1,4 +1,9 @@
 package com.narcos.airlines.repository;
 
-public interface CrewRepo {
+import com.narcos.airlines.entity.CrewEntity;
+import org.springframework.data.jpa.repository.JpaRepository;
+
+public interface CrewRepo extends JpaRepository<CrewEntity, Integer> {
+
+
 }
