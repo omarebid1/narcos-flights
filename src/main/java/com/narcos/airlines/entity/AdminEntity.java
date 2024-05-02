@@ -29,8 +29,8 @@ public class AdminEntity {
 
     @Column(name = "email")
     private String adminEmail;
-    private String adminPhone;
-    //maher
 
+    @Column(name = "phone_number")
+    private String adminPhone;
 
 }
