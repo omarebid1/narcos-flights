@@ -15,6 +15,7 @@ import java.util.List;
 
 @CrossOrigin
 public class PassengerController {
+
     @Autowired
     PassangerDao passangerDao;
 
